@@ -1,0 +1,14 @@
+pool:
+ vmImages: 'ubuntu latest'
+stages:
+  - stage: Build
+    jobs:
+      - job: Buildjob
+
+  - stage: Test
+    jobs:
+      - job: Testjob
+
+  - stage: Prod
+    jobs:
+      - job: Prodjob
